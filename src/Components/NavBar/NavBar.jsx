@@ -1,41 +1,27 @@
-import {
-    Box,
-    Grid,
-    Link,
-    Stack,
-    Typography,
-    Button,
-    Drawer,
-    IconButton,
-    Divider,
-    Container,
-} from "@mui/material";
-import { Facebook, GitHub, LinkedIn, Padding, Twitter, Menu, Clear } from "@mui/icons-material";
-import { motion } from "framer-motion";
+import { Box, Link, Drawer, IconButton, Divider, Container } from "@mui/material";
+import { Menu, Clear } from "@mui/icons-material";
 import logo from "../../Assets/images/wm-logo.png";
-
 import React, { useState } from "react";
-import zIndex from "@mui/material/styles/zIndex";
-import { alignProperty } from "@mui/material/styles/cssUtils";
+
 const navMenu = [
     {
         path: "/",
         name: "Home",
     },
     {
-        path: "#about",
+        path: "/aboutme",
         name: "About",
     },
     {
-        path: "#education",
-        name: "Education",
+        path: "/work",
+        name: "Work",
     },
     {
-        path: "#skils",
-        name: "Skills",
+        path: "/projects",
+        name: "Projects",
     },
     {
-        path: "#contact",
+        path: "/contact",
         name: "Contact",
     },
 ];
@@ -45,6 +31,7 @@ const NavBar = () => {
     return (
         <>
             <Box
+                component="nav"
                 display={{ xs: "none", sm: "flex" }}
                 bgcolor="primary.main"
                 justifyContent="space-between"
@@ -55,31 +42,50 @@ const NavBar = () => {
                         display: "flex",
                         justifyContent: "space-between",
                         alignItems: "center",
-                        height: "80px",
+                        height: "70px",
                     }}
                 >
-                    <Box sx={{ height: "80px" }}>
-                        <img src={logo} alt="my_logo_image" height="100%" width="100%" />
+                    <Box sx={{ height: "70px" }}>
+                        <a href="/">
+                            <img src={logo} alt="my_logo_image" height="100%" width="100%" />
+                        </a>
                     </Box>
                     <Box
                         sx={{
                             display: "flex",
                             alignItems: "center",
-                            gap: { sm: "1.8rem", md: "4rem", lg: "5rem" },
+                            gap: { sm: "0.4rem", md: "1.4rem" },
                         }}
                     >
                         {navMenu.map((item, index) => {
                             return (
                                 <Link
+                                    position="relative"
                                     component="a"
                                     underline="none"
                                     href={item.path}
                                     sx={{
                                         color: "#ffffff",
                                         fontWeight: "bolder",
-                                        transition: "0.5s ease-in",
+                                        transition: "0.5s ease",
+                                        padding: "0 1rem",
+
                                         "&:hover": {
-                                            color: "#1976d2",
+                                            color: "#00abf0",
+                                        },
+                                        ":before": {
+                                            content: '""',
+                                            width: "0",
+                                            height: "3px",
+                                            position: "absolute",
+                                            borderRadius: "2px",
+                                            backgroundColor: "btnColor",
+                                            bottom: "-10px",
+                                            left: "0",
+                                            transition: "0.8s ease",
+                                        },
+                                        "&:hover::before": {
+                                            width: "100%",
                                         },
                                     }}
                                 >
@@ -89,54 +95,9 @@ const NavBar = () => {
                         })}
                     </Box>
                 </Container>
-                {/* <Typography variant="h3" fontStyle="" fontSize="2rem" fontWeight="bolder" color="White" >W|MEHAR</Typography> */}
-
-                {/* <Stack direction="row" spacing={3} width="30%" pl="10%">
-                   
-                    <GitHub
-                        sx={{
-                            color: "white",
-                            transition: "0.5s ease-in",
-                            "&:hover": {
-                                color: "#1976d2",
-                                cursor: "pointer",
-                            },
-                        }}
-                    ></GitHub>
-                    <LinkedIn
-                        sx={{
-                            color: "white",
-                            transition: "0.5s ease-in",
-                            "&:hover": {
-                                color: "#1976d2",
-                                cursor: "pointer",
-                            },
-                        }}
-                    ></LinkedIn>
-                    <Twitter
-                        sx={{
-                            color: "white",
-                            transition: "0.5s ease-in",
-                            "&:hover": {
-                                color: "#1976d2",
-                                cursor: "pointer",
-                            },
-                        }}
-                    ></Twitter>
-                    <Facebook
-                        sx={{
-                            color: "white",
-                            transition: "0.5s ease-in",
-                            "&:hover": {
-                                color: "#1976d2",
-                                cursor: "pointer",
-                            },
-                        }}
-                    ></Facebook>
-                </Stack> */}
             </Box>
             {/* ///responsive */}
-            <Box bgcolor="#142033 ">
+            <Box bgcolor="primary.main">
                 {" "}
                 <Container
                     sx={{

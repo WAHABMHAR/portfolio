@@ -1,0 +1,29 @@
+* {
+    /* overflow: hidden; */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Raleway", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/* ///shine 0072ff */
+
+.animation-bounce {
+    border-radius: 50%;
+    animation: bounceAnimation 3s infinite linear;
+}
+/* #shiningSvg {
+    box-shadow: 0 0 8px #0072ff, 0 0 15px #0072ff, 0 0 15px #0072ff, 0 0 15px #0072ff;
+} */
+
+@keyframes bounceAnimation {
+    0% {
+        transform: translateY(1px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(1px);
+    }
+}

@@ -1,5 +1,7 @@
 import Home from "./Components/Home";
 import { Route, Routes } from "react-router";
+import "./styles/app.css";
+import SocialBox from "./Components/SocialBox/SocialBox";
 
 function App() {
     return (
