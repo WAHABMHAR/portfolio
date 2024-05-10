@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import html from "../../Assets/images/svg/languages/html.svg";
 import VanillaTilt from "vanilla-tilt";
 
-const MySkillItem = () => {
+const MySkillItem = ({ data }) => {
     const tiltRef = useRef(null);
     useEffect(() => {
         VanillaTilt.init(tiltRef.current, {
@@ -38,18 +38,6 @@ const MySkillItem = () => {
                     "#00abf0 0px 0px 0px 1px, #00abf0 0px 4px 5px -1px, #00abf0 0px 1px 0px inset",
             }}
             bgcolor={"lightPrimary"}
-            // sx={{
-            //     width: "16rem",
-            //     height: "12rem",
-            //     borderRadius: "8px",
-            //     display: "flex",
-            //     alignItems: "center",
-            //     justifyContent: "center",
-            //     flexDirection: "column",
-            //     gap: "1rem",
-            //     boxShadow:
-            //         "#00abf0 0px 0px 0px 1px, #00abf0 0px 4px 5px -1px, #00abf0 0px 1px 0px inset",
-            // }}
         >
             <Box
                 sx={{
@@ -57,7 +45,7 @@ const MySkillItem = () => {
                     height: "5.8rem",
                 }}
             >
-                <img src={html} alt="box-img" width="100%" height="100%" />
+                <img src={data?.lanImg} alt="box-img" width="100%" height="100%" />
             </Box>
             <Typography
                 fontSize={"1.5rem"}
@@ -66,12 +54,13 @@ const MySkillItem = () => {
                 variant="p"
                 sx={{
                     WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundColor:
-                        '"linear-gradient(162deg, rgba(255,255,255,1) 16%, rgba(112,208,247,1) 27%, rgba(95,202,246,1) 32%, rgba(20,32,51,1) 64%)"',
+                    backgroundClip: "text",
+                    color: "transparent",
+                    backgroundImage:
+                        "linear-gradient(162deg, rgba(255,255,255,1) 30%, rgba(112,208,247,1) 38%, rgba(95,202,246,1) 57%, rgba(20,32,51,1) 78%)",
                 }}
             >
-                HTML
+                {data?.lanName}
             </Typography>
         </div>
     );
