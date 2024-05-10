@@ -1,9 +1,7 @@
-import { Box, Stack, Typography, Button, Link } from "@mui/material";
-import styled from "@emotion/styled";
-import { color, motion } from "framer-motion";
+import { Box, Typography } from "@mui/material";
 import React from "react";
-import myImage from "../../../Assets/images/pic.jpg";
-import { CustomButton } from "../../../styles/muiStyles";
+import myImage from "../../Assets/images/pic.jpg";
+import { CustomButton } from "../../styles/muiStyles";
 import { useNavigate } from "react-router";
 
 const AboutSection = () => {

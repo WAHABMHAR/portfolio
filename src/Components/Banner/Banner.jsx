@@ -1,15 +1,8 @@
-import { Box, Button, Container, Grid, Stack, Typography, styled } from "@mui/material";
+import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 import myImage from "../../Assets/images/pic.jpg";
 import { TypeAnimation } from "react-type-animation";
 import React from "react";
 import { CustomButton } from "../../styles/muiStyles";
-import linekdin from "../../Assets/images/svg/linkedin.svg";
-import { useNavigate } from "react-router";
-
-const CustomBox = styled(Box)`
-    position:relative;
-    &::bofore
-`;
 
 const Banner = () => {
     const handleIconClick = (index) => {

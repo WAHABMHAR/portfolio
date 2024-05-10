@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 import React, { useEffect, useRef } from "react";
-import html from "../../Assets/images/svg/languages/html.svg";
 import VanillaTilt from "vanilla-tilt";
 
 const MySkillItem = ({ data }) => {
