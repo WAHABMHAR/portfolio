@@ -48,6 +48,7 @@ const socialMedia = [
 const ContactForm = () => {
     return (
         <Box
+            id="contact"
             component={"section"}
             bgcolor={"primary.main"}
             sx={{

@@ -21,7 +21,7 @@ const navMenu = [
         name: "Projects",
     },
     {
-        path: "/contact",
+        path: "#contact",
         name: "Contact",
     },
 ];
