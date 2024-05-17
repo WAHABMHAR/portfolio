@@ -1,7 +1,22 @@
-import { Box } from "@mui/material";
+import { Box, Container } from "@mui/material";
+import TextSphere from "../TextSphere/TextSphere";
+import ProjectBanner from "./ProjectBanner";
+import "./projects.css";
 
 const Projects = () => {
-    return <Box>Still in Development Process Wait for it....</Box>;
+    return (
+        <>
+            <ProjectBanner />
+        </>
+        // <Box>
+        //     <Container>
+        //         <Box></Box>
+        //     </Container>
+        //     <Box>
+        //         <TextSphere />
+        //     </Box>
+        // </Box>
+    );
 };
 
 export default Projects;

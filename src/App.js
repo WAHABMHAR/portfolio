@@ -5,10 +5,12 @@ import AboutMe from "./Components/About Us/AboutMe";
 import Projects from "./Components/Projects/Projects";
 import MyWork from "./Components/Work/MyWork";
 import ContactPage from "./Components/ContactForm/ContactPage";
+import { ToastContainer } from "react-toastify";
 
 function App() {
     return (
         <>
+            <ToastContainer />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/aboutme" element={<AboutMe />} />

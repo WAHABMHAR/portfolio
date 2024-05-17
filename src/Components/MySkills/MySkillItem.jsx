@@ -13,15 +13,15 @@ const MySkillItem = ({ data }) => {
         });
 
         // Clean up function to remove event listeners when component unmounts
-        return () => {
-            tiltRef.current.vanillaTilt.destroy();
-        };
+        // return () => {
+        //     tiltRef.current.vanillaTilt.destroy();
+        // };
     }, []);
     return (
         <div
             ref={tiltRef}
             data-tilt
-            data-tilt-scale="1.1"
+            data-tilt-scale="1.17"
             data-tilt-reverse="true"
             style={{
                 backgroundColor: "rgba(0, 171, 240, 0.2)",

@@ -10,7 +10,7 @@ const navMenu = [
     },
     {
         path: "/aboutme",
-        name: "About",
+        name: "About Me",
     },
     {
         path: "/work",
@@ -22,7 +22,7 @@ const navMenu = [
     },
     {
         path: "#contact",
-        name: "Contact",
+        name: "Contact Me",
     },
 ];
 const NavBar = () => {

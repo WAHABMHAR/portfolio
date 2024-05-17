@@ -2,11 +2,12 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import myImage from "../../Assets/images/pic.jpg";
 import { CustomButton } from "../../styles/muiStyles";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 
 const AboutSection = () => {
     const navigate = useNavigate();
-    const handleReadMore = () => {
+    const handleReadMore = (e) => {
+        e.stopPropagation();
         navigate("/aboutme");
     };
     return (
@@ -114,6 +115,9 @@ const AboutSection = () => {
                     </Box>
                     , collaborate, and create something extraordinary together!"
                 </Typography>
+                <button onClick={handleReadMore} style={{ background: "white" }}>
+                    ReadMore
+                </button>
                 <CustomButton onClick={handleReadMore}>Read More</CustomButton>
             </Box>
         </>

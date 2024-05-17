@@ -1,4 +1,4 @@
-import { Box, Container, Link, List, ListItem, Stack } from "@mui/material";
+import { Box, Container, Link, List, ListItem, Stack, Typography } from "@mui/material";
 import footerLogo from "../../Assets/images/wm-logo.png";
 import React from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -50,7 +50,7 @@ const Footer = () => {
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
-                    padding: "4rem 0",
+                    padding: "2rem 0",
                 }}
             >
                 <Stack alignItems={"center"} spacing={"1rem"}>
@@ -62,6 +62,7 @@ const Footer = () => {
                             display: "flex",
                             alignItems: "center",
                             gap: "2rem",
+                            flexWrap: "wrap",
                         }}
                     >
                         {navMenu.map((item, index) => {
@@ -102,7 +103,13 @@ const Footer = () => {
                         })}
                     </Box>
                     <Box className="social-media-list">
-                        <List sx={{ display: "flex", gap: "1rem", justifyContent: "center" }}>
+                        <List
+                            sx={{
+                                display: "flex",
+                                gap: "1rem",
+                                justifyContent: "center",
+                            }}
+                        >
                             {socialMedia?.map((item, index) => {
                                 return (
                                     <ListItem key={index} className="icon-list-item">
@@ -115,6 +122,11 @@ const Footer = () => {
                         </List>
                     </Box>
                 </Stack>
+                <Box>
+                    <Typography variant="body2" color="btnColor">
+                        &copy; Copyright Reserved by Wahab Mehar
+                    </Typography>
+                </Box>
             </Container>
         </Box>
     );
