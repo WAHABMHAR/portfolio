@@ -115,9 +115,6 @@ const AboutSection = () => {
                     </Box>
                     , collaborate, and create something extraordinary together!"
                 </Typography>
-                <button onClick={handleReadMore} style={{ background: "white" }}>
-                    ReadMore
-                </button>
                 <CustomButton onClick={handleReadMore}>Read More</CustomButton>
             </Box>
         </>
