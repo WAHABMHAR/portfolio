@@ -31,7 +31,7 @@ const AboutSection = () => {
                     padding={"0 1rem"}
                     fontWeight="bolder"
                     position={"relative"}
-                    fontSize={{ xs: "2rem", md: "3rem" }}
+                    fontSize={{ xs: "2rem", md: "2.5rem" }}
                     sx={{
                         ":before": {
                             content: '""',

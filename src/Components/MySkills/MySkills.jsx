@@ -105,7 +105,7 @@ const MySkills = () => {
                     padding={"0 1rem"}
                     fontWeight="bolder"
                     position={"relative"}
-                    fontSize={{ xs: "2rem", md: "3rem" }}
+                    fontSize={{ xs: "2rem", md: "2.5rem" }}
                     sx={{
                         ":before": {
                             content: '""',
@@ -125,8 +125,8 @@ const MySkills = () => {
                 >
                     Skills
                 </Typography>
-                <Typography fontSize={"1.4rem"} variant="body1" color="btnColor">
-                    These are the technologies I've worked with
+                <Typography fontSize={"1.2rem"} variant="body1" color="btnColor">
+                    // These are the technologies I've worked with
                 </Typography>
 
                 <Box
