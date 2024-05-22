@@ -115,10 +115,6 @@ const AboutSection = () => {
                     </Box>
                     , collaborate, and create something extraordinary together!"
                 </Typography>
-<<<<<<< HEAD
-
-=======
->>>>>>> f87c29276392b5ec8231e414270486e7d5a78bae
                 <CustomButton onClick={handleReadMore}>Read More</CustomButton>
             </Box>
         </>
