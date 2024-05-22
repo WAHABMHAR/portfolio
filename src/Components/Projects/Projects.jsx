@@ -1,5 +1,3 @@
-import { Box, Container } from "@mui/material";
-import TextSphere from "../TextSphere/TextSphere";
 import ProjectBanner from "./ProjectBanner";
 import "./projects.css";
 import ProjectTechnologies from "./ProjectTechnologies";

@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 
 import "./textsphere.css";
-
-// Importing TagCloud package
 import TagCloud from "TagCloud";
 
 const TextSphere = () => {
