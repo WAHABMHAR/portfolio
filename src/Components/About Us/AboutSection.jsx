@@ -31,7 +31,7 @@ const AboutSection = () => {
                     padding={"0 1rem"}
                     fontWeight="bolder"
                     position={"relative"}
-                    fontSize={{ xs: "2rem", md: "3rem" }}
+                    fontSize={{ xs: "2rem", md: "2.5rem" }}
                     sx={{
                         ":before": {
                             content: '""',
@@ -115,7 +115,10 @@ const AboutSection = () => {
                     </Box>
                     , collaborate, and create something extraordinary together!"
                 </Typography>
+<<<<<<< HEAD
 
+=======
+>>>>>>> f87c29276392b5ec8231e414270486e7d5a78bae
                 <CustomButton onClick={handleReadMore}>Read More</CustomButton>
             </Box>
         </>

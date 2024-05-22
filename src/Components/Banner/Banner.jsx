@@ -15,6 +15,19 @@ const Banner = () => {
             window.location.href = "https://www.linkedin.com/in/wahab-mehar-b7b2a81a0/";
         }
     };
+
+    const handleDownload = () => {
+        const pdfUrl =
+            "https://drive.google.com/file/d/1j-7SUH2U66JbHteS915F2tLkovs9J6Tx/view?usp=drive_link";
+
+        // Creating an anchor element
+        const link = document.createElement("a");
+        link.href = "";
+        window.open(pdfUrl, "_blank");
+        // link.download =
+        //     "https://drive.google.com/file/d/1j-7SUH2U66JbHteS915F2tLkovs9J6Tx/view?usp=drive_link"; // Set the file name
+        link.click(); // Simulate click to trigger download
+    };
     return (
         <Box bgcolor={"primary.main"}>
             <Container sx={{ display: "flex", justifyContent: "center" }}>
@@ -73,10 +86,14 @@ const Banner = () => {
                                     sequence={[
                                         "MERN Developer",
                                         500,
+                                        "Frontend Developer",
+                                        500,
                                         "React Developer",
-                                        600,
+                                        500,
+                                        "Responsive Design",
+                                        500,
                                         "Smart Contract Developer",
-                                        600,
+                                        500,
                                     ]}
                                     repeat={Infinity}
                                 />
@@ -178,7 +195,7 @@ const Banner = () => {
                                 direction="row"
                                 pt={"2rem"}
                             >
-                                <CustomButton>Download CV</CustomButton>
+                                <CustomButton onClick={handleDownload}>Download CV</CustomButton>
                                 <CustomButton>Hire Me</CustomButton>
                             </Stack>
                         </Stack>
