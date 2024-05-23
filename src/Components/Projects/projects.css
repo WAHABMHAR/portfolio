@@ -19,6 +19,9 @@
     font: 600 1.3rem/1.5rem "Raleway";
     letter-spacing: 0.0625em;
 }
+.tagcloud div:last-child {
+    display: none;
+}
 
 /* Change color of each text in sphere on hover   */
 .tagcloud--item {

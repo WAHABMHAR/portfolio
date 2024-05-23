@@ -39,9 +39,7 @@ const options = {
 
 const ProjectTechnologies = () => {
     useEffect(() => {
-        // return () => {
         TagCloud(container, texts, options);
-        // };
     }, []);
     return (
         <Box sx={{ bgcolor: "primary.main", display: { xs: "none", sm: "block" } }}>
