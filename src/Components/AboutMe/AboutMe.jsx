@@ -24,7 +24,7 @@ const timlineData = [
     },
     {
         title: "University of Agriculture",
-        position: "Intermediate Degree",
+        position: "B.sc Agricultural Sciences",
         duration: "2020 - 2022",
         Icon: <SchoolIcon />,
         desc: "Like many students, I was initially unsure about my career path. After seeking advice, I gained admission to the University of Agriculture. However, after two years, I realized this was not my true passion. Consequently, I decided to quit the degree program and pursue my desired profession in tech Industry",
