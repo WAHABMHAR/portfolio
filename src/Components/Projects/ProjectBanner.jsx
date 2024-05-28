@@ -1,6 +1,7 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import React from "react";
-import bg from "../../Assets/images/bg5.jpg";
+// import bg from "../../Assets/images/bg5.jpg";
+import bg from "../../Assets/images/portfolioBG.jpg";
 import { TypeAnimation } from "react-type-animation";
 import { CustomButton } from "../../styles/muiStyles";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
@@ -11,9 +12,19 @@ const ProjectBanner = () => {
             sx={{
                 backgroundImage: `url(${bg})`,
                 backgroundColor: "primary.main",
-                backgroundPosition: "top center",
+                backgroundPosition: "center",
                 backgroundSize: "cover",
+                position: "relative",
                 backgroundRepeat: "no-repeat",
+                ":after": {
+                    content: '""',
+                    position: "absolute",
+                    left: "0",
+                    top: "0",
+                    width: "100%",
+                    height: "100%",
+                    background: "rgba(0, 0, 0, 0.4)",
+                },
             }}
         >
             <Container>
@@ -21,7 +32,11 @@ const ProjectBanner = () => {
                     className="text-content flx-align-center"
                     sx={{ height: "450px", fontSize: "2rem", fontWeight: "600" }}
                 >
-                    <Stack sx={{ textAlign: "center" }} alignItems="center" spacing={"2rem"}>
+                    <Stack
+                        sx={{ textAlign: "center", zIndex: 1 }}
+                        alignItems="center"
+                        spacing={"2rem"}
+                    >
                         <Typography
                             variant="h3"
                             color="transparent"
@@ -53,8 +68,9 @@ const ProjectBanner = () => {
                             variant="p"
                             color="#ffffff"
                             sx={{
-                                fontSize: { xs: "1rem", sm: "1.2rem", md: "1.5rem" },
+                                fontSize: { xs: "1rem", sm: "1.2rem" },
                                 width: { xs: "90%", md: "70%" },
+                                lineHeight: "1.5rem",
                                 fontWeight: "400",
                             }}
                         >

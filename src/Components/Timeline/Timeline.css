@@ -1,0 +1,41 @@
+.vertical-timeline-element-content {
+    -webkit-box-shadow: 0 3px 0 #00acf0;
+    box-shadow: 0 3px 0 #00acf0;
+    gap: 1rem;
+}
+.vertical-timeline-element-content h2 {
+    font: 600 1.8rem/2rem "Raleway", sans-serif;
+    color: #00acf0;
+    letter-spacing: 1px;
+}
+.vertical-timeline-element-content h5 {
+    font: 600 1.1rem/1.4rem "Raleway", sans-serif;
+    margin-top: 0.5rem;
+    letter-spacing: 1px;
+}
+.vertical-timeline-element-content p {
+    font: 500 0.9rem/1.4rem "Raleway", sans-serif;
+    letter-spacing: 1px;
+}
+.vertical-timeline-element-content span {
+    font: 700 1rem/1.4rem "Raleway", sans-serif !important;
+    color: #00acf0;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+    .vertical-timeline-element-content h2 {
+        font: 600 1.4rem/1.7rem "Raleway", sans-serif;
+    }
+    .vertical-timeline-element-content h5 {
+        font: 600 0.9rem/1rem "Raleway", sans-serif;
+    }
+    .vertical-timeline-element-content p {
+        font: 500 0.6rem/1rem "Raleway", sans-serif;
+    }
+    .vertical-timeline-element-content span {
+        font: 700 0.9rem/1.2rem "Raleway", sans-serif !important;
+        color: #00acf0;
+        letter-spacing: 1px;
+    }
+}

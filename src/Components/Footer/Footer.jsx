@@ -18,10 +18,10 @@ const navMenu = [
         path: "/work",
         name: "Work",
     },
-    {
-        path: "#skill",
-        name: "Skills",
-    },
+    // {
+    //     path: "#skill",
+    //     name: "Skills",
+    // },
     {
         path: "/projects",
         name: "Projects",
