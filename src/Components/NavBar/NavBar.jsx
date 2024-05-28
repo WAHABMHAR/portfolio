@@ -1,7 +1,8 @@
-import { Box, Link, Drawer, IconButton, Divider, Container } from "@mui/material";
+import { Box, Drawer, IconButton, Divider, Container } from "@mui/material";
 import { Menu, Clear } from "@mui/icons-material";
 import logo from "../../Assets/images/wm-logo.png";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const navMenu = [
     {
@@ -63,13 +64,13 @@ const NavBar = () => {
                                     position="relative"
                                     component="a"
                                     underline="none"
-                                    href={item.path}
-                                    sx={{
+                                    to={item.path}
+                                    style={{
                                         color: "#ffffff",
                                         fontWeight: "bolder",
                                         transition: "0.5s ease",
                                         padding: "0 1rem",
-
+                                        textDecoration: "none",
                                         "&:hover": {
                                             color: "#00abf0",
                                         },
