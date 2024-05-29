@@ -114,7 +114,7 @@ const Banner = () => {
                                 learning, always eager to expand my knowledge and push the
                                 boundaries of what's possible.you'll find me exploring the latest
                                 tech trends, experimenting with new tools and frameworks, or
-                                immersing myself in a good book
+                                immersing myself in a good book.
                             </Typography>
                             <Stack
                                 direction={"row"}
