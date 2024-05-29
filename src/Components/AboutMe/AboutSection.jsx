@@ -60,7 +60,7 @@ const timlineData = [
     },
     {
         title: "Virtual University",
-        position: "Student",
+        position: "BS Computer Science",
         duration: "2024 - Present",
         Icon: <SchoolIcon />,
         desc: "Now I'm continuing my studies from Vitual University of Pakistan",
