@@ -6,7 +6,6 @@ import Footer from "./Footer/Footer";
 import AboutSection from "./AboutMe/AboutSection";
 import ProjectTechnologies from "./Projects/ProjectTechnologies";
 import MyProjects from "./Projects/MyProjects";
-import { useHistory } from "react-router-dom";
 
 const Home = () => {
     return (

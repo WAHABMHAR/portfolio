@@ -36,7 +36,7 @@ const NavBar = () => {
         <>
             <Box
                 component="nav"
-                display={{ xs: "none", sm: "flex" }}
+                display={{ xs: "none", md: "flex" }}
                 bgcolor="primary.main"
                 justifyContent="space-between"
                 alignItems="center"
@@ -106,7 +106,7 @@ const NavBar = () => {
                     sx={{
                         alignItems: "center",
                         justifyContent: "space-between",
-                        display: { xs: "flex", sm: "none" },
+                        display: { xs: "flex", md: "none" },
                     }}
                 >
                     <Box height="70px">
@@ -148,7 +148,9 @@ const NavBar = () => {
                                         <Link
                                             key={index}
                                             underline="none"
+                                            component={"a"}
                                             href={item.path}
+                                            onClick={() => setOpen(false)}
                                             sx={{
                                                 color: "white",
                                                 textAlign: "center",

@@ -11,24 +11,24 @@ const navMenu = [
         name: "Home",
     },
     {
-        path: "/aboutme",
+        path: "#aboutme",
         name: "About",
     },
     {
-        path: "/work",
-        name: "Work",
+        path: "#educationWork",
+        name: "Education",
     },
-    // {
-    //     path: "#skill",
-    //     name: "Skills",
-    // },
     {
-        path: "/projects",
+        path: "#skills",
+        name: "Skills",
+    },
+    {
+        path: "#projects",
         name: "Projects",
     },
     {
-        path: "/contact",
-        name: "Contact",
+        path: "#contact",
+        name: "Contact Me",
     },
 ];
 const socialMedia = [

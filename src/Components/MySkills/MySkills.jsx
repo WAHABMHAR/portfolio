@@ -125,7 +125,11 @@ const MySkills = () => {
                 >
                     Skills
                 </Typography>
-                <Typography fontSize={"1.2rem"} variant="body1" color="btnColor">
+                <Typography
+                    fontSize={{ xs: "0.9rem", sm: "1.2rem" }}
+                    variant="body1"
+                    color="btnColor"
+                >
                     // These are the technologies I've worked with
                 </Typography>
 

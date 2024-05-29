@@ -195,7 +195,7 @@ const Banner = () => {
                                 direction="row"
                                 pt={"2rem"}
                             >
-                                <CustomButton onClick={handleDownload}>Download CV</CustomButton>
+                                <CustomLink onClick={handleDownload}>Download CV</CustomLink>
                                 <CustomLink href="#contact">Hire Me</CustomLink>
                             </Stack>
                         </Stack>

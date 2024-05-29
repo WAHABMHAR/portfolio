@@ -98,7 +98,7 @@ const ContactForm = () => {
                         padding={"0 1rem"}
                         fontWeight="bolder"
                         position={"relative"}
-                        fontSize={{ xs: "2rem", md: "2.5rem" }}
+                        fontSize={{ xs: "2rem", md: "2.2rem" }}
                         sx={{
                             ":before": {
                                 content: '""',

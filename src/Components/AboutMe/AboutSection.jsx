@@ -28,7 +28,7 @@ const timlineData = [
         position: "B.sc Agricultural Sciences",
         duration: "2020 - 2022",
         Icon: <SchoolIcon />,
-        desc: "Like many students, I was initially unsure about my career path. After seeking advice, I gained admission to the University of Agriculture. However, after two years, I realized this was not my true passion. Consequently, I decided to quit the degree program and pursue my desired profession in tech Industry",
+        desc: "Like many students, I was initially unsure about my career path. After seeking advice, I gained admission to the University of Agriculture. However, after two years, I realized this was not my true passion. Consequently, I decided to quit the degree program and pursue my desired profession in tech industry.",
     },
     {
         title: "Gamica Cloud Center",
@@ -42,7 +42,7 @@ const timlineData = [
         position: "Intern",
         duration: "2023",
         Icon: <BusinessCenterIcon />,
-        desc: "After Evaluation Test, I've been selected for the Gamica Cloud Internship Program. During this internship, I will be working on logical and UI projects to gain valuable experience in programming. Engage in projects to deepen my understanding of programming concepts and languages. Develop user-friendly and visually appealing interfaces",
+        desc: "After Evaluation Test, I've been selected for the Gamica Cloud Internship Program. During this internship, I will be working on logical and UI projects to gain valuable experience in programming. Engage in projects to deepen my understanding of programming concepts and languages. Develop user-friendly and visually appealing interfaces.",
     },
     {
         title: "Bloctech Solutions",
@@ -56,7 +56,7 @@ const timlineData = [
         position: "MERN Developer",
         duration: "2024 - Present",
         Icon: <BusinessCenterIcon />,
-        desc: "After being selected through an interview, I've been appointed as a MERN developer to work on real-time projects, expanding my knowledge under the guidance of professionals. My main responsibilities include working on the frontend and building complex websites to enhance UI and user experience. Additionally, I will collaborate with teams for quick and effective responses",
+        desc: "After being selected through an interview, I've been appointed as a MERN developer to work on real-time projects, expanding my knowledge under the guidance of professionals. My main responsibilities include working on the frontend and building complex websites to enhance UI and user experience. Additionally, I will collaborate with teams for quick and effective responses.",
     },
 ];
 
