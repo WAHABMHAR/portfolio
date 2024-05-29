@@ -2,7 +2,7 @@ import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 import myImage from "../../Assets/images/pic.jpg";
 import { TypeAnimation } from "react-type-animation";
 import React from "react";
-import { CustomButton } from "../../styles/muiStyles";
+import { CustomButton, CustomLink } from "../../styles/muiStyles";
 
 const Banner = () => {
     const handleIconClick = (index) => {
@@ -196,7 +196,7 @@ const Banner = () => {
                                 pt={"2rem"}
                             >
                                 <CustomButton onClick={handleDownload}>Download CV</CustomButton>
-                                <CustomButton>Hire Me</CustomButton>
+                                <CustomLink href="#contact">Hire Me</CustomLink>
                             </Stack>
                         </Stack>
                     </Grid>

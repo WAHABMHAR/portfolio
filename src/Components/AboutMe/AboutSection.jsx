@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import myImage from "../../Assets/images/pic.jpg";
-import { CustomButton } from "../../styles/muiStyles";
+import { CustomButton, CustomLink } from "../../styles/muiStyles";
 import { useNavigate } from "react-router-dom";
 import MySkills from "../MySkills/MySkills";
 import TimeLine from "../Timeline/TimeLine";
@@ -88,7 +88,7 @@ const AboutSection = () => {
                         padding={"0 1rem"}
                         fontWeight="bolder"
                         position={"relative"}
-                        fontSize={{ xs: "2rem", md: "2.5rem" }}
+                        fontSize={{ xs: "2rem", md: "2.2rem" }}
                         sx={{
                             ":before": {
                                 content: '""',
@@ -177,7 +177,7 @@ const AboutSection = () => {
                         </Box>
                         , collaborate, and create something extraordinary together!"
                     </Typography>
-                    <CustomButton onClick={handleReadMore}>Read More</CustomButton>
+                    <CustomLink href="#educationWork">Read More</CustomLink>
                 </Box>
                 {/* //////skills */}
                 <MySkills />
@@ -203,7 +203,7 @@ const AboutSection = () => {
                         padding={"0 1rem"}
                         fontWeight="bolder"
                         position={"relative"}
-                        fontSize={{ xs: "2rem", md: "2.5rem" }}
+                        fontSize={{ xs: "2rem", md: "2.2rem" }}
                         sx={{
                             ":before": {
                                 content: '""',

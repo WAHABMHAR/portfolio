@@ -91,7 +91,7 @@ const MyProjects = () => {
                     padding={"0 1rem"}
                     fontWeight="bolder"
                     position={"relative"}
-                    fontSize={{ xs: "2rem", md: "2.5rem" }}
+                    fontSize={{ xs: "2rem", md: "2.2rem" }}
                     sx={{
                         ":before": {
                             content: '""',
@@ -112,7 +112,7 @@ const MyProjects = () => {
                     Projects
                 </Typography>
                 <Typography fontSize={"1.2rem"} variant="body1" color="btnColor">
-                    // Checkout some of my recenet work
+                    // Checkout some of my recent work
                 </Typography>
 
                 <Box
