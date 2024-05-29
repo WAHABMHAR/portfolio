@@ -1,18 +1,20 @@
 import React from "react";
 import NavBar from "./NavBar/NavBar";
 import Banner from "./Banner/Banner";
-import MySkills from "./MySkills/MySkills";
 import ContactForm from "./ContactForm/ContactForm";
 import Footer from "./Footer/Footer";
 import AboutSection from "./AboutMe/AboutSection";
+import ProjectTechnologies from "./Projects/ProjectTechnologies";
+import MyProjects from "./Projects/MyProjects";
 
 const Home = () => {
     return (
         <>
             <NavBar />
             <Banner />
+            <ProjectTechnologies />
             <AboutSection></AboutSection>
-            <MySkills />
+            <MyProjects />
             <ContactForm />
             <Footer />
         </>

@@ -88,7 +88,7 @@ const Skills = [
 
 const MySkills = () => {
     return (
-        <Box bgcolor={"primary.main"} id="skill">
+        <Box bgcolor={"primary.main"} id="skills">
             <Container
                 sx={{
                     padding: "4rem 0",

@@ -1,8 +1,7 @@
-import { Box, Drawer, IconButton, Divider, Container } from "@mui/material";
+import { Box, Drawer, IconButton, Divider, Container, Link } from "@mui/material";
 import { Menu, Clear } from "@mui/icons-material";
 import logo from "../../Assets/images/wm-logo.png";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 const navMenu = [
     {
@@ -10,15 +9,19 @@ const navMenu = [
         name: "Home",
     },
     {
-        path: "/aboutme",
+        path: "/#aboutme",
         name: "About Me",
     },
     {
-        path: "/work",
-        name: "Work",
+        path: "#educationWork",
+        name: "Education",
     },
     {
-        path: "/projects",
+        path: "#skills",
+        name: "Skills",
+    },
+    {
+        path: "#projects",
         name: "Projects",
     },
     {
@@ -62,13 +65,12 @@ const NavBar = () => {
                             return (
                                 <Link
                                     position="relative"
-                                    component="a"
-                                    underline="none"
-                                    to={item.path}
-                                    style={{
+                                    component={"a"}
+                                    href={item.path}
+                                    sx={{
                                         color: "#ffffff",
                                         fontWeight: "bolder",
-                                        transition: "0.5s ease",
+                                        transition: "0.3s ease",
                                         padding: "0 1rem",
                                         textDecoration: "none",
                                         "&:hover": {
@@ -83,7 +85,7 @@ const NavBar = () => {
                                             backgroundColor: "btnColor",
                                             bottom: "-10px",
                                             left: "0",
-                                            transition: "0.8s ease",
+                                            transition: "0.5s ease",
                                         },
                                         "&:hover::before": {
                                             width: "100%",
