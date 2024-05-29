@@ -58,6 +58,13 @@ const timlineData = [
         Icon: <BusinessCenterIcon />,
         desc: "After being selected through an interview, I've been appointed as a MERN developer to work on real-time projects, expanding my knowledge under the guidance of professionals. My main responsibilities include working on the frontend and building complex websites to enhance UI and user experience. Additionally, I will collaborate with teams for quick and effective responses.",
     },
+    {
+        title: "Virtual University",
+        position: "Student",
+        duration: "2024 - Present",
+        Icon: <SchoolIcon />,
+        desc: "Now I'm continuing my studies from Vitual University of Pakistan",
+    },
 ];
 
 const AboutSection = () => {
