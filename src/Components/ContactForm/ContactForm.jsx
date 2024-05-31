@@ -84,7 +84,7 @@ const ContactForm = () => {
             component={"section"}
             bgcolor={"primary.main"}
             sx={{
-                padding: "4rem 0",
+                padding: "2rem 0",
             }}
         >
             <Container
@@ -94,7 +94,7 @@ const ContactForm = () => {
                     <Typography
                         variant="h4"
                         color="white"
-                        mb={{ xs: "3rem", md: "5rem" }}
+                        mb={{ xs: "2rem", md: "5rem" }}
                         padding={"0 1rem"}
                         fontWeight="bolder"
                         position={"relative"}
@@ -271,19 +271,17 @@ const ContactForm = () => {
                                 );
                             })}
                         </List>
-                        <Divider sx={{ backgroundColor: "#00acf0" }} />
-                        {/* <Box>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.967025605046!2d55.23493387608176!3d25.17059123277647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6948545672c7%3A0xcb101a96555c09ae!2zw4dlxZ9tZSBCYXpsYW1hIEthaHZhbHTEsQ!5e0!3m2!1sen!2s!4v1715775110967!5m2!1sen!2s"
-                                width="100%"
-                                height="150"
-                                style={{ border: "0" }}
-                                allowfullscreen=""
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"
-                            ></iframe>
-                        </Box> */}
-                        <Box className="social-media-list">
+                        <Divider
+                            sx={{
+                                display: { xs: "none", md: "block" },
+                                backgroundColor: "#00acf0",
+                            }}
+                        />
+
+                        <Box
+                            className="social-media-list"
+                            sx={{ display: { xs: "none", md: "block" } }}
+                        >
                             <List sx={{ display: "flex", gap: { xs: "0.5rem", md: "2rem" } }}>
                                 {socialMedia?.map((item, index) => {
                                     return (
