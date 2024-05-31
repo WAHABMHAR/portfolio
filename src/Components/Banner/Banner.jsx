@@ -102,7 +102,7 @@ const Banner = () => {
                                 width="100%"
                                 maxWidth={{ xs: "20rem", sm: "35rem", lg: "40rem" }}
                                 variant="body1"
-                                color="white"
+                                color="#fffff5"
                                 margin={{ xs: "1rem 0", lg: "2rem 0" }}
                                 fontSize={"1rem"}
                                 fontWeight="lighter"

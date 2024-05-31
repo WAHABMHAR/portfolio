@@ -169,7 +169,7 @@ const AboutSection = () => {
                     <Typography
                         textAlign="center"
                         variant="body2"
-                        color="white"
+                        color="#fffff5"
                         fontFamily={"Raleway"}
                         margin={{ xs: "2rem 0" }}
                         width={{ xs: "22rem", sm: "35rem", md: "48rem", lg: "60rem" }}
