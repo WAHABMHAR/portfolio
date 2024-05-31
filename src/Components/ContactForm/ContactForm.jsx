@@ -170,6 +170,7 @@ const ContactForm = () => {
                                 <TextField
                                     id="outlined-basic"
                                     label="Email"
+                                    type="email"
                                     variant="outlined"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
