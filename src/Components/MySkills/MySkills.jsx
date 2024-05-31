@@ -17,6 +17,7 @@ import solidity from "../../Assets/images/svg/languages/solidity.svg";
 import truffle from "../../Assets/images/svg/languages/truffle.png";
 import wp from "../../Assets/images/svg/languages/wordpress.svg";
 import github from "../../Assets/images/svg/github.svg";
+import MobileSkills from "./MobileSkills";
 const Skills = [
     {
         lanImg: html,
@@ -136,7 +137,7 @@ const MySkills = () => {
                 <Box
                     sx={{
                         padding: "1rem 0",
-                        display: "flex",
+                        display: { xs: "none", md: "flex" },
                         flexWrap: "wrap",
                         gap: "1rem",
                         justifyContent: "center",
@@ -144,6 +145,19 @@ const MySkills = () => {
                 >
                     {Skills?.map((item, index) => {
                         return <MySkillItem key={index} data={item} />;
+                    })}
+                </Box>
+                <Box
+                    sx={{
+                        padding: "1rem 0",
+                        display: { xs: "flex", md: "none" },
+                        flexWrap: "wrap",
+                        gap: "1rem",
+                        justifyContent: "center",
+                    }}
+                >
+                    {Skills?.map((item, index) => {
+                        return <MobileSkills key={index} data={item} />;
                     })}
                 </Box>
             </Container>

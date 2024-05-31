@@ -32,6 +32,18 @@
     align-items: center;
     justify-content: center;
 }
+.mobile_skill_item {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .mobile_skill_item {
+        display: block;
+    }
+    .desktop_skill_item {
+        display: none;
+    }
+}
 
 @keyframes bounceAnimation {
     0% {
