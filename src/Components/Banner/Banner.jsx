@@ -18,7 +18,7 @@ const Banner = () => {
 
     const handleDownload = () => {
         const pdfUrl =
-            "https://drive.google.com/file/d/1j-7SUH2U66JbHteS915F2tLkovs9J6Tx/view?usp=drive_link";
+            "https://drive.google.com/file/d/1J9qpmCF1b-LLD3jayd9qssVTa3eTYSUc/view?usp=drive_link";
 
         // Creating an anchor element
         const link = document.createElement("a");
