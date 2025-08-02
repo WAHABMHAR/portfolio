@@ -177,7 +177,7 @@ const AboutSection = () => {
                         fontSize={{ xs: "0.8rem", md: "1.2rem" }}
                         lineHeight={{ lg: "2rem" }}
                     >
-                        I'm Certified MERN Stack and Blockchain Developer with almost 2 years of
+                        I'm Certified MERN Stack and Blockchain Developer with almost 4 years of
                         experience in IT Industry. Programming is my Passion. Currently I am working
                         on Real-Time Projects, gainning experience and knowledge.Also I'm Dedicated
                         with my field and wanted to excel my growth in this field. Technology isn't
