@@ -109,7 +109,7 @@ const Banner = () => {
                                 letterSpacing={1}
                                 lineHeight={1.8}
                             >
-                                Dedicated Web Developer with almost 2 years of experience in
+                                Dedicated Web Developer with almost 4 years of experience in
                                 Developing Web Applications. I'm a firm believer in lifelong
                                 learning, always eager to expand my knowledge and push the
                                 boundaries of what's possible.you'll find me exploring the latest
