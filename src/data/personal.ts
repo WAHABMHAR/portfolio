@@ -36,7 +36,7 @@ export const personalInfo: PersonalInfo = {
     "Backend & APIs (Node / NestJS / Python)",
   ],
   headline: 'Architecting Enterprise AI Systems, Mobile Apps & Ultra-Fast Web Experiences',
-  bio: 'I’m a Full-Stack Developer with 6+ years of hands-on experience building web and mobile applications. I specialize in React.js, Next.js, React Native, Node.js, Express.js, MongoDB, and PostgreSQL. I also build AI Agents and workflow automations using n8n. I have experience with APIs, third-party integrations, Stripe, Google Maps, and AI integrations. I focus on writing clean, scalable code and delivering reliable solutions that meet business needs.',
+  bio: 'I’m a Full-Stack Developer with 5+ years of hands-on experience building web and mobile applications. I specialize in React.js, Next.js, React Native, Node.js, Express.js, MongoDB, and PostgreSQL. I also build AI Agents and workflow automations using n8n. I have experience with APIs, third-party integrations, Stripe, Google Maps, and AI integrations. I focus on writing clean, scalable code and delivering reliable solutions that meet business needs.',
   location: 'Lahore, Pakistan',
   availability: 'Available for Enterprise Level Project',
   yearsOfExp: '5+',
